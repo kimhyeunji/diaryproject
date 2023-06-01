@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DiaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFE38D"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="날짜" />
+
+        <TextView
+            android:id="@+id/weatherTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="날씨" />
+
+        <TextView
+            android:id="@+id/moodTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="기분" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/diaryContentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일기 내용" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#FFE38D"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="닫기" />
+
+</LinearLayout>

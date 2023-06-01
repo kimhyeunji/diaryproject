@@ -1,0 +1,5 @@
+<resources>
+    <style name="CustomDatePickerStyle" parent="android:Widget.DatePicker">
+        <item name="android:background">#FFE38D</item>
+    </style>
+</resources>

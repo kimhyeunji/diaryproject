@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFE38D"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="날짜" />
+
+        <Spinner
+            android:id="@+id/weatherSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/moodSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFE38D"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="저장하기" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="일기를 작성해주세요"
+            android:id="@+id/diaryEditText"/>
+
+        <DatePicker
+            android:id="@+id/datePicker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomDatePickerStyle"
+            android:datePickerMode="calendar"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#CCCCCC">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvYear"
+            android:text="0000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="년"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMonth"
+            android:text="00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDay"
+            android:text="00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ♡ "/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/dateButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFE38D"
+            android:text="날짜"
+            android:textStyle="bold"
+            android:textColor="#000000"
+             />
+
+        <Button
+            android:id="@+id/writeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFE38D"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="일기쓰기"/>
+
+        <Button
+            android:id="@+id/exitButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFE38D"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="나가기"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
