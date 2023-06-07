@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         diaryLayout = findViewById(R.id.diaryLayout);
-        diaryLayout.setVisibility(View.GONE); // 초기에 숨김
+        diaryLayout.setVisibility(View.VISIBLE); // 초기에 숨김
 
         // 달력에서 날짜 선택 시 DiaryActivity를 열도록 설정
         datePicker.init(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth(),
